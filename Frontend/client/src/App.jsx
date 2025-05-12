@@ -1,11 +1,18 @@
+import { Toaster } from 'react-hot-toast';
+import Footer from './components/Footer.jsx';
 import Menubar from './components/Menubar.jsx';
 import Home from './pages/Home.jsx';
+import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
     return (
         <div>
             <Menubar />
-            <Home />
+            <Toaster />
+            <Routes>
+                <Route path="/" element={<Home />} />
+            </Routes>
+            <Footer />
         </div>
     )
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { categories } from '../assets/assests';
+import { assests, categories } from '../assets/assests';
 
 const BgSlider = () => {
 
@@ -29,6 +29,13 @@ const BgSlider = () => {
             </div>
         </div>
 
+
+        {/* image Slider */}
+        {/* <div className='relative w-full max-w-4xl overflow-hidden m-auto rounded-xl shadow-xl'>
+            <img src={assests.people_org} alt="original image" style={{clipPath: `inset(0, ${100.2 - sliderPosition}% 0 0)`}}/>
+
+            <img src={assests.people} alt="removed background image" style={{clipPath: `inset{0, 0, 0, ${sliderPosition}}`}} className='absolute top-0 left-0 w-full h-full'/>
+        </div> */}
             
 
     </div>
